@@ -21,7 +21,7 @@ timeInput.addEventListener("input",(event)=>{
 });
 
 startButton.addEventListener("click",(event)=>{
-  if(!urlInput.value.match(/^(http(s)?:\/\/)?[^\s]+\.[^\s]+$/)) return alert("URLを入力してください");
+  if(!urlInput.value.match(/^(http(s)?:\/\/)?[^\s]+\.[^\s]+$/)[0]) return alert("URLを入力してください");
   
   if(!confirm(`URL: ${urlInput.value}\nアクセス間隔: ${intervalInput.value}ms\n継続時間: ${timeInput.value}秒\n\nこの設定で実行しますか？`)) return;
 
