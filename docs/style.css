@@ -1,4 +1,4 @@
-#config {
+main {
     width: fit-content;
-    background-color: blue;
+    margin: 80px auto;
 }

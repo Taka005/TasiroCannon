@@ -5,20 +5,22 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div id="config">
-            <input type="url" id="urlInput" placeholder="アクセスするURL" required>
-            <br>
-            <input type="range" id="intervalInput" min="1" max="5000" value="100" required>
-            <p>アクセス間隔: <output id="intervalValue"></output>ms</p>
-
-            <input type="range" id="timeInput" min="1" max="180" value="10" required>
-            <p>継続時間: <output id="timeValue"></output>秒</p>
-
-            <input type="button" id="startButton" value="実行">
-        </div>
-        <div id="result">
-            <p>アクセス回数: <output id="count"></output>回</p>
-        </div>
+        <main>
+            <div id="config">
+                <input type="url" id="urlInput" placeholder="アクセスするURL" required>
+                <br>
+                <input type="range" id="intervalInput" min="1" max="5000" value="100" required>
+                <p>アクセス間隔: <output id="intervalValue"></output>ms</p>
+    
+                <input type="range" id="timeInput" min="1" max="180" value="10" required>
+                <p>継続時間: <output id="timeValue"></output>秒</p>
+    
+                <input type="button" id="startButton" value="実行">
+            </div>
+            <div id="result">
+                <p>アクセス回数: <output id="count"></output>回</p>
+            </div>
+        </main>
     </body>
     <script src="./script.js"></script>
 </html>
