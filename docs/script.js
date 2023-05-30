@@ -40,5 +40,5 @@ startButton.addEventListener("click",(event)=>{
 
   setTimeout(()=>{
     clearInterval(interval);
-  },timeInput.value);
+  },timeInput.value * 1000);
 });

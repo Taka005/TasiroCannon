@@ -12,10 +12,10 @@
             <input type="range" id="intervalInput" min="1" max="10000" step="10" value="100" required>
             <p>アクセス間隔: <output id="intervalValue"></output>ms</p>
 
-            <input type="range" id="timeInput" min="1" max="10000" step="10" value="10000" required>
-            <p>継続時間: <output id="timeValue"></output>ms</p>
+            <input type="range" id="timeInput" min="1" max="180" step="1" value="10" required>
+            <p>継続時間: <output id="timeValue"></output>秒</p>
 
-            <input type="button" id="startButton">
+            <input type="button" id="startButton" name="実行">
         </div>
         <div id="result">
             <p id="count"></p>
