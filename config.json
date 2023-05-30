@@ -1,5 +1,6 @@
 {
-    "url": "https://ktgis.net/mandara/",
-    "interval": "100",
-    "time": "10000"
+    "url": "https://ktgis.net/mandara/index.php",
+    "interval": "200",
+    "time": "30000",
+    "option": {}
 }

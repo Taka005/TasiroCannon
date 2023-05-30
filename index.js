@@ -3,7 +3,7 @@ const config = require("./config");
 
 let count = 0;
 const interval = setInterval(async()=>{
-  await fetch(config.url)
+  await fetch(config.url,config.option)
     .then(()=>{
       count++;
       console.log(`${count}:アクセスしました`);
