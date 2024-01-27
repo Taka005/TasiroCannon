@@ -28,7 +28,9 @@ startButton.addEventListener("click",(event)=>{
 
   let count = 0;
   const interval = setInterval(async()=>{
-    await fetch(urlInput.value)
+    await fetch(urlInput.value,{
+      mode: "no-cors"
+    })
       .then(()=>{
         count++;
         countValue.innerHTML = count;
