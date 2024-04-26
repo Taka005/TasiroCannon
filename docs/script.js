@@ -23,8 +23,10 @@ timeInput.addEventListener("input",(event)=>{
 startButton.addEventListener("click",(event)=>{
   if(urlInput.value.length == 0) return alert("URLが指定されていません");
   if(!urlInput.value.match(/^(http(s)?:\/\/)?[^\s]+\.[^\s]+$/)) return alert("URLを入力してください");
-  
+
   if(!confirm(`URL: ${urlInput.value}\nアクセス間隔: ${intervalInput.value}ms\n継続時間: ${timeInput.value}秒\n\nこの設定で実行しますか？`)) return;
+
+  window.open(urlInput.value);
 
   let count = 0;
   const interval = setInterval(async()=>{
